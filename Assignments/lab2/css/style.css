@@ -1,0 +1,56 @@
+body{
+
+    background-color: rgb(148, 24, 24);
+    opacity: 0.7;
+    font-size: 20px;
+
+}
+ol#movie{
+
+display: flex;
+flex-direction: column-reverse;
+
+}
+li {
+    flex: 0 0 auto;
+}
+h1,h2{
+
+    color:#ffff;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+a{
+    color: yellow;
+}
+
+a:link{
+
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline; 
+ }
+#em{
+
+    font-style: italic;
+}
+p{
+    font-size: 25px;
+}
+p::first-letter{
+
+    font-size: 75px;
+  initial-letter: 2;
+  font-family: Georgia;
+ 
+}
+p:nth-child(2){
+    color:greenyellow;
+}
+span{
+    color: orange;
+}

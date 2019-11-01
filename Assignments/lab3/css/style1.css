@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: black;
+}
+
+.container{
+
+    display: grid;
+    width: 90%;
+    height: 500px;
+    text-align: center;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: minmax(20px,50px);
+    margin: auto;
+    column-gap: 10px;
+    row-gap: 1em;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 20px 20px ;
+   
+   
+}
+#mainheader{
+    
+   
+    grid-column-start: 1; 
+  grid-column-end: 5; 
+ position: relative;
+ width: max-content;
+height: max-content;
+   
+  
+}
+#mainheader h3{
+    display: inline;
+   
+   
+}
+#mainheader #left{
+    float: left;
+    margin-bottom: 0px;
+}
+#mainheader #right{
+    float: right;
+    margin-right: 5px;
+   
+}
+
+.mainarticle{
+
+    grid-column: 1/3; 
+    
+    grid-row: 2/4; 
+   
+      
+      background-image: url("../images/twitter.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      
+}
+#article1 {
+    position: absolute;
+    top: 70%;
+    left: 40px;
+    color: #fff;
+    padding: 10px;
+  }
+  h4,h2,a,p{
+      color: white;
+  }
+  a{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+.sidearticle{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-column: 3/5; 
+    
+    grid-row: 2/4; 
+  
+     
+      column-gap: 10px;
+  row-gap: 1em;
+
+ 
+ 
+}
+
+.art23{
+    grid-row: 2/3; 
+   
+    
+}
+.art45{
+    grid-row: 3/4; 
+    
+    border:2px rgb(14, 12, 12) double;
+}
+
+.art23 article2, .art45 article4{
+
+    grid-column: 3/4; 
+   
+}
+.art23 article3, .art45 article5{
+    grid-column: 4/5; 
+   
+}
+#article2{
+    grid-column: 1/3; 
+  
+    grid-row: 1/3; 
+ 
+   
+    background-image: url("../images/fitbit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color:white;
+   
+}
+
+#article3{
+    grid-column: 3/5; 
+    grid-row: 1/3; 
+   
+    background-image:  url("../images/wishkey.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color:white;
+}
+#article4{
+    background-image: url("../images/_109468095_tv057661056.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/3; 
+     
+    grid-row: 3/5; 
+    
+    
+    position: relative;
+    color:white;
+}
+#article5{
+    background-image:url("../images/_109465379_mediaitem109465378.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3/span 2; 
+    grid-row: 3/span 2;
+   
+    position: relative;
+    color:white;
+}
+
+ h4{
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    color:white;
+    padding: 10px;
+  
+}
+
+

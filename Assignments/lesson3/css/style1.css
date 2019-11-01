@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+.container{
+    display: grid;
+    grid-gap: 10px;
+  
+   grid-template-areas: "header " "mainsection" "sidesection " " footer";
+   
+}
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+  }
+.header{
+    grid-area: header;
+    background-color: #999;
+}
+.mainsection{
+    grid-area: mainsection;
+    background-color:red;
+    position: relative;
+  
+}
+
+
+.sidesection{
+    grid-area: sidesection;
+    display: grid;
+   
+    grid-template-areas:"side1 " "side2" "side3" " side4";
+}
+.footer{
+    grid-area: footer;
+}
+@media only screen and (min-width: 600px) {
+
+    .container{
+       
+        grid-gap: 10px;
+        grid-template-rows: 40px;
+       grid-template-columns: fit-content(100%) fit-content(100%) max-content max-content;
+       grid-template-areas: "header header header header" "mainsection mainsection sidesection sidesection" "footer footer footer footer" ;
+       max-width:900px;
+        grid-auto-rows: minmax(40px,auto);
+      
+       position: relative;
+    }
+    .sidesection{
+        
+        grid-template-columns: repeat(2,1fr);
+       grid-template-areas:"side1 side2" "side3 side4";
+       max-width: 600px;
+       grid-gap: 10px;
+       grid-auto-rows: minmax(140px,auto);
+     
+      
+    }
+}
+.side4{
+    border: red solid 1px;
+    grid-area: side4;
+   
+}
+.side3{
+    grid-area: side3;
+    border: red solid 1px;
+}
+.side2{
+    grid-area: side2;
+    border: red solid 1px;
+}
+.side1{
+    grid-area: side1;
+    border: rgb(100, 159, 159) solid 1px;
+}
+.side5{
+    grid-row: header-start/footer-start;
+  
+    border: rgb(100, 159, 159) solid 1px;
+}
+
+
+
+
+
+
