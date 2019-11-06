@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../Q11/css/style1.css">
+</head>
+<body>
+   <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">MUM golden dome Market : : : SRM System</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+       
+              <li class="nav-item">
+                    <a  style="border-left:1px solid white; opacity: 0.7;"class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="border-left:1px solid white;opacity: 0.7;" href="#">Suppliers</a>
+                  </li>
+         
+      </ul>
+      <!-- Links -->
+  
+      <form class="form-inline">
+        <div class="md-form my-0" >
+              
+                      <span style="color: cornsilk; font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 1em;"> Hello!</span>
+                      
+            <button type="button" class="btn btn-light">Sign Out</button>
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar--> 
+  <div class="container">
+        <div class="mainsection">
+          <form>
+           
+            <div class="form-group">
+                <label for="exampleInputEmail1">Product Number</label>
+                <input type="text" class="form-control" id="pnum" aria-describedby="emailHelp" >
+                
+    
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="pname" aria-describedby="emailHelp"  >
+               
+    
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Unit Price</label>
+                <input type="text" class="form-control" id="price" aria-describedby="emailHelp" value="0.0" >
+                
+    
+              </div>
+          
+           
+          </form>
+        </div>
+        <div class="sidesection">
+          <form>
+          
+            <div class="form-group">
+                <label for="exampleInputEmail1">Quantity in Stock</label>
+                <input type="text" class="form-control" id="qty" aria-describedby="emailHelp" value="0" >
+              
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Supplier </label>
+                <select class="custom-select" id="supplier">
+                  <option selected>select supplier...</option>
+                  <option value="Amazon">Amazon</option>
+                  <option value="Zen Supplier">Zen Supplier</option>
+                  <option value="Al Nur plc">Al Nur plc</option>
+                </select>
+               </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Date Supplied</label>
+                <input type="date" class="form-control" id="date" aria-describedby="emailHelp"  >
+                <small id="emailHelp" class="form-text text-muted">Enter Valid date.</small>
+               </div>
+              <button type="button" class="btn btn-outline-info waves-effect">Reset</button>
+              <button type="button" class="btn btn-outline-warning btn-rounded waves-effect">cancel</button>
+              <button type="button" id="add" class="btn btn-outline-info btn-rounded waves-effect">Add Prodcut</button>
+           
+          </form>
+        </div>
+  </div>
+  <script src="js/app1.js" ></script>
+</body>
+</html>
